@@ -1,0 +1,21 @@
+{
+  "changedFilesIos": [
+    "scripts\\LetsEat\\main.js",
+    "index.html",
+    "scripts\\jquery.min.js",
+    "css\\index.css",
+    "scripts\\chart\\angular-charts.min.js",
+    "scripts\\chart\\angular-charts.js",
+    "scripts\\chart\\angular-charts.min.js.map",
+    "config.xml"
+  ],
+  "deletedFilesIos": [],
+  "addedPluginsIos": [],
+  "deletedPluginsIos": [],
+  "changedFiles": [
+    "index.html"
+  ],
+  "deletedFiles": [],
+  "addedPlugins": [],
+  "deletedPlugins": []
+}

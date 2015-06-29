@@ -1,0 +1,18 @@
+﻿body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+
+
+}
+
+
+.chart {
+ width: 100vw;
+ height: 100vw;
+}
+
+.ac-tooltip{
+
+    position:absolute; 
+    z-index:999999999;
+
+}
