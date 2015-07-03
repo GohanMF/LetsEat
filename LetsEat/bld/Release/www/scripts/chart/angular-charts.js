@@ -23,13 +23,13 @@ angular.module('angularCharts').directive('acChart', [
       ];
     /**
    * Utility function to call when we run out of colors!
-   * @return {String} Hexadecimal color
+   * @return {String} Hexadecimal color ABCDEF
    */
     function getRandomColor() {
-      var letters = '0123456789ABCDEF'.split('');
+      var letters = '0123456789ABC'.split('');
       var color = '#';
       for (var i = 0; i < 6; i++) {
-        color += letters[Math.round(Math.random() * 15)];
+        color += letters[Math.round(Math.random() * 12)];
       }
       return color;
     }
@@ -890,7 +890,7 @@ angular.module('angularChartsTemplates', ['angularChartsTemplate_left', 'angular
 
 angular.module("angularChartsTemplate_left", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("angularChartsTemplate_left",
-    "<div class=\"angular-charts-template\"><div class=\"ac-title\">{{acConfig.title}}</div><div class=\"ac-legend\" ng-show=\"{{acConfig.legend.display}}\"><table><tr ng-repeat=\"l in legends\"><td><div class=\"ac-legend-box\" ng-attr-style=\"background:{{l.color}};\"></div></td><td ng-bind-html=\"l.title\"></td></tr></table></div><div class=\"ac-chart\"></div></div>");
+    "<div class=\"angular-charts-template\"><div class=\"ac-title\">{{acConfig.title}}</div><div class=\"ac-legend\" ng-show=\"{{acConfig.legend.display}}\"><div ng-repeat=\"l in legends\" class=\"ac-legend-box\" ng-attr-style=\"background-color:{{l.color}};\" ng-bind-html=\"l.title\"></div></div><div class=\"ac-chart\"></div></div>");
 }]);
 
 angular.module("angularChartsTemplate_right", []).run(["$templateCache", function($templateCache) {

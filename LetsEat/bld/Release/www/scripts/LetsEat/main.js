@@ -26,7 +26,7 @@
         legend: {
             display: true,
             //could be 'left, right'
-            position: 'right',
+            position: 'left',
             htmlEnabled:false
         }
     };
@@ -115,9 +115,12 @@
 
 
 
-/*
+
 $(function () {
 
+    $(".ac-legend").appendTo(".personal-ac-legend")
+})
+/*
     function AnimateRotate(duration, angle) {
 
         var $elem = $('svg');

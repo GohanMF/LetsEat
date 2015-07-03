@@ -112,11 +112,18 @@
   <ItemGroup>
     <Content Include="Content\ionic.css" />
     <Content Include="Content\ionic.min.css" />
+    <Content Include="css\fonts\ionicons.eot" />
+    <Content Include="css\fonts\ionicons.svg" />
+    <Content Include="css\fonts\ionicons.ttf" />
+    <Content Include="css\fonts\ionicons.woff" />
     <Content Include="css\nv.d3.css" />
     <Content Include="fonts\ionicons.eot" />
     <Content Include="fonts\ionicons.svg" />
     <Content Include="fonts\ionicons.ttf" />
     <Content Include="fonts\ionicons.woff" />
+    <Content Include="images\app-apon.png" />
+    <Content Include="images\teste.png" />
+    <Content Include="images\app-apon1.png" />
     <Content Include="scripts\AngularIonic\angular-animate.js" />
     <Content Include="scripts\AngularIonic\angular-animate.min.js" />
     <Content Include="scripts\AngularIonic\angular-animate.min.js.map" />
@@ -904,23 +911,16 @@
     <Content Include="scripts\AngularIonic\ionic.min.js" />
     <Content Include="scripts\AngularIonic\platformOverrides.js" />
     <Content Include="scripts\AngularIonic\version.json" />
-    <Content Include="scripts\chart\angular-chart.js" />
     <Content Include="scripts\chart\angular-charts.js" />
     <Content Include="scripts\chart\angular-charts.min.js" />
     <Content Include="scripts\chart\angular-charts.min.js.map">
       <DependentUpon>angular-charts.min.js</DependentUpon>
     </Content>
-    <Content Include="scripts\chart\angularjs-nvd3-directives.js" />
-    <Content Include="scripts\chart\angularjs-nvd3-directives.min.js" />
-    <Content Include="scripts\chart\Chart.js" />
     <Content Include="scripts\chart\d3.js" />
     <Content Include="scripts\chart\d3.min.js" />
-    <Content Include="scripts\chart\nv.d3.js" />
-    <Content Include="scripts\chart\nv.d3.min.js" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\LetsEat\main.js" />
-    <Folder Include="images\" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
     <Folder Include="merges\ios\" />

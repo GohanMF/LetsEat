@@ -12,7 +12,7 @@
     <link href="Content/ionic.min.css" rel="stylesheet" />
     <script src="scripts/jquery.min.js"></script>
 
- 
+
 
     <script src="scripts/AngularIonic/ionic.bundle.min.js"></script>
     <script src="scripts/chart/d3.min.js"></script>
@@ -35,25 +35,32 @@
 
             </ion-header-bar>
             <ion-content class="padding">
+
+
+                <div style=" background-image: url(images/app-apon1.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                height: 100vw;
+                position: absolute;
+                background-size: contain;
+                vertical-align: middle;
+                width: 20vw;
+                z-index: 9;">
+                <!--img style="width:45px" src="images/app-apon.png" /-->
+                </div>
+                <div data-ac-chart="'pie'"
+                     data-ac-data="data"
+                     data-ac-config="config"
+                     class="chart">
+                </div>
+
                 <button id="rotate" class="button" ng-click="startSpin()"></button>
 
-              
-                <div style="position:absolute ; height:100vw ; line-height : 100vw; z-index:99999999999999" >
-                    <div style="vertical-align: middle ; margin-top: -10px;" >
-                        =>
-                    </div>
-                </div>
-                    <div data-ac-chart="'pie'"
-                         data-ac-data="data"
-                         data-ac-config="config"
-                         class="chart">
-                    </div>
 
-
-                    the winner is : <span class="winner"></span>
-
-</ion-content>
-        </ion-side-menu-content> 
+                the winner is : <span class="winner"></span>
+                <div class="personal-ac-legend"></div>
+            </ion-content>
+        </ion-side-menu-content>
         <ion-side-menu>
             <ion-header-bar class="bar-royal">
                 <h1>Menu</h1>
@@ -107,7 +114,7 @@
     </ion-side-menus>
 
 
-
+    <dialog style="background-color:#393971"
 
 
     <!-- Cordova reference, this is added to your app when it's built. -->
