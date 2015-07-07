@@ -920,9 +920,12 @@
     <Content Include="scripts\chart\d3.min.js" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\jquery.min.js" />
+    <Content Include="scripts\LetsEat\Routing.js" />
     <Content Include="scripts\LetsEat\main.js" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Content Include="Templates\game.html" />
+    <Content Include="Templates\Home.html" />
     <Folder Include="merges\ios\" />
     <Content Include="merges\windows\scripts\platformOverrides.js" />
     <Content Include="merges\windows\scripts\winstore-jscompat.js" />

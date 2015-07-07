@@ -55,12 +55,30 @@ body .pane, body .view , .menu-content  .bar-positive {
 
 
 
-.menu .bar-header,.menu .scroll-content , menu .scroll-content > .list > .item {
+.menu .bar-header,.menu .scroll-content , menu .scroll-content div , .item {
 
     background-color:#F0E9DF !important;
     color:#f07A1A !important;
 
 }
 
+.bar.bar-royal{
+
+    border-color:#F0E9DF !important;
+
+}
  
  
+
+#rotate{
+
+  border: medium none;
+    border-radius: 5px;
+    box-shadow: 1px 4px #000, -2px -2px #c2c2c2 inset;
+    font-size: 21px;
+    font-weight: bolder;
+    height: 8.3vh;
+    line-height: 8.3vh;
+    margin: 0 auto;
+    width: 35vw;
+}

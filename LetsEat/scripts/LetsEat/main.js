@@ -1,4 +1,4 @@
-﻿var app = angular.module('LetsEatApp', ['ionic', 'angularCharts'])
+﻿var app = angular.module('LetsEatApp', ['ionic', 'angularCharts', ])
 .controller('LetsEatController', function ($scope, $ionicSideMenuDelegate, $ionicLoading) {
 
     $scope.toggleLeft = function () {
@@ -10,10 +10,11 @@
         title: '',
         tooltips: true,
         labels: false,
+        width: "100%",
         mouseover: function () { },
         mouseout: function () { },
         click: function (d) {
-           
+
 
             $ionicLoading.show({
                 template: d.data.tooltip,
@@ -27,7 +28,7 @@
             display: true,
             //could be 'left, right'
             position: 'left',
-            htmlEnabled:false
+            htmlEnabled: false
         }
     };
 
@@ -54,16 +55,16 @@
 
 
     $scope.startSpin = function () {
-         
+
         var time1 = Math.floor((Math.random() * 5000) + 5000);
         var degree1 = Math.random() + 1;
-       
 
-          AnimateRotate(time1, degree1);
+
+        AnimateRotate(time1, degree1);
 
     }
 
- 
+
     function AnimateRotate(duration, angle) {
 
         var $elem = $('svg');
@@ -93,13 +94,12 @@
                             numberLeftLower = angular.element(pieItems[a]).position().left;
                             idLeftLower = a;
 
-                            console.log(a);
 
-                    }
-                    console.log("vou sair");
-             
+
+                        }
+
                     $(".winner").text(pieItems[idLeftLower].__data__.data.tooltip);
-                    
+
 
                 }
 
@@ -113,64 +113,7 @@
 
 });
 
-
-
-
 $(function () {
 
     $(".ac-legend").appendTo(".personal-ac-legend")
 })
-/*
-    function AnimateRotate(duration, angle) {
-
-        var $elem = $('svg');
-        var leftRight
-        if ((Math.floor(Math.random() * 100) % 2) == 0) {
-            leftRight = "-"
-        }
-        else {
-            leftRight = "+"
-        }
-        $({ deg: 0 }).animate({ deg: leftRight + ((duration) * angle) }, 
-            {
-            duration: duration,
-            step: function (now) {
-                $elem.css({ transform: 'rotate(' + now + 'deg)' });
-            },
-            complete: function(){        
-
-                var idLeftLower = 0
-                var numberLeftLower = 90000
-
-                var pieItems = $('g>g')
-
-                for (var a = 0 ; a <= pieItems.length - 1 ; +1)
-
-                    if (pieItems[a].position().left < numberLeftLower) {
-                        numberLeftLower = pieItems[a].position().left;
-                        idLeftLower = a;
-                    }
-                     
-
-            }
-
-
-
-        });
-
-       
-    }
-
-
-    $("#rotate").click(
-        function () {
-            var time1 = Math.floor((Math.random() * 5000) + 5000);
-            var degree1 = Math.random() + 1;
-            AnimateRotate(time1, degree1);
-
-
-        }
-
-
-    );
-});*/
