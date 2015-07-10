@@ -102,6 +102,7 @@ angular.module('angularCharts').directive('acChart', [
         var chartFunc = getChartFunction(chartType);
         chartFunc();
         drawLegend();
+        
       }
       /**
      * Sets height and width of chart area based on legend
@@ -122,7 +123,7 @@ angular.module('angularCharts').directive('acChart', [
         case 'left':
         case 'right':
           height = totalHeight;
-          width = totalWidth * 0.75;
+          width = totalWidth * 0.91;
           break;
         }
       }
@@ -139,6 +140,10 @@ angular.module('angularCharts').directive('acChart', [
         chartContainer = getChildrenByClassname(childrens, 'ac-chart');
         legendContainer = getChildrenByClassname(childrens, 'ac-legend');
         height -= getChildrenByClassname(childrens, 'ac-title')[0].clientHeight;
+
+         /** Mais tarde alterar para que o utilizador consigo por a legenda onde quiser**/
+        angular.element(".personal-ac-legend").children().remove();
+        angular.element(".personal-ac-legend").append(legendContainer);
       }
       /**
      * Parses data from attributes
@@ -792,6 +797,7 @@ angular.module('angularCharts').directive('acChart', [
             });
           });
         }
+
       }
       var HTML_ENTITY_MAP = {
           '&': '&amp;',

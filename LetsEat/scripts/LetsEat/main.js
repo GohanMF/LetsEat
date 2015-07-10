@@ -1,5 +1,5 @@
 ﻿var app = angular.module('LetsEatApp', ['ionic', 'angularCharts', ])
-.controller('LetsEatController', function ($scope, $ionicSideMenuDelegate, $ionicLoading) {
+.controller('LetsEatController', ['$scope' ,'$ionicSideMenuDelegate', '$ionicLoading', function ($scope, $ionicSideMenuDelegate, $ionicLoading) {
 
     $scope.toggleLeft = function () {
         $ionicSideMenuDelegate.toggleLeft();
@@ -111,9 +111,14 @@
     }
 
 
-});
+}])
 
-$(function () {
+.controller('letsGetPlaces', ['$scope','getPlaces', '$routeParams', function($scope, getPlaces, $routeParams) {
+    console.log("im in lista")
+  
+}])
+.controller('letsGetPlace', ['$scope','getPlace', '$routeParams', function($scope, getPlaces, $routeParams) {
+    console.log("im in item")
+  
+}]);
 
-    $(".ac-legend").appendTo(".personal-ac-legend")
-})
